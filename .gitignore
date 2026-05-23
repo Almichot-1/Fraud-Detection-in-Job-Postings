@@ -1,0 +1,35 @@
+# Virtual Environments
+.venv/
+.venv311/
+env/
+venv/
+ENV/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local IDE Configurations
+.vscode/
+.idea/
+.lh/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Node dependencies (frontend)
+frontend/node_modules/
+frontend/dist/
+frontend/.eslintcache
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
