@@ -8,8 +8,6 @@
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![React 18](https://img.shields.io/badge/react-18.x-cyan.svg)](https://react.dev/)
 [![Flask API](https://img.shields.io/badge/flask-REST_API-green.svg)](https://flask.palletsprojects.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 ## 📋 Project Overview
 This repository hosts our final course project: an end-to-end Machine Learning (ML) and Natural Language Processing (NLP) pipeline designed to classify online job advertisements as either legitimate or fraudulent. Utilizing the Greek Employment Scam Aegean Dataset (EMSCAD), the system addresses severe class imbalance (~4.8% fraud) through custom cost-sensitive learning algorithms, threshold optimization, and advanced NLP preprocessing. 
 
@@ -32,7 +30,7 @@ flowchart TD
         SPLIT --> TEXT[Text Concatenator]
         SPLIT --> CAT[Ordinal Encoder]
         SPLIT --> NUM[Numeric Imputer]
-        TEXT --> TFIDF[TF-IDF Vectorizer <br/> ngram: 1,2 | Sublinear TF]
+        TEXT --> TFIDF[TF-IDF Vectorizer <br/> ngram: 1,2; Sublinear TF]
     end
 
     subgraph Cost-Sensitive ML Model Training
@@ -185,15 +183,6 @@ Our model evaluates seven custom domain-specific indicators to identify recruitm
 >
 > **Privacy Compliance**: To guarantee user data protection, the inference engine operates entirely on-demand. No user input text is stored, logged, or transmitted by either the React client or the Flask prediction server.
 
----
-
-## 👥 Contributors (AASTU Group 4)
-* **Team Member 1** - *Lead ML Engineer*
-* **Team Member 2** - *Data Scientist / NLP Specialist*
-* **Team Member 3** - *Backend API Developer*
-* **Team Member 4** - *Frontend Engineer / UI Designer*
-
----
 
 ## 📚 References
 1. S. Bansal, "Real / Fake Job Posting Prediction," Kaggle, 2020.
